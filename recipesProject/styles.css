@@ -1,0 +1,169 @@
+/* HOMEPAGE */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lavender ;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-y: hidden;
+}
+#homepageBody{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    text-align: center;
+    background-color: lavender;
+}
+#title{
+   /* border: 2px solid black; */
+   margin: 0;
+   padding: 0;
+   color: rgb(214, 182, 0);
+   font-size: 4em;
+   padding-top: 15%;
+   
+    
+}
+#recipe_section ul{
+    /* border: 2px solid red; */
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15%;
+    font-size: 2.8em;
+}
+
+#recipe_section ul li a{
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+#recipe_section ul li a:hover{
+    color: rgb(214, 182, 0);
+}
+.recipes li{
+    list-style: none;
+}
+
+/* GRID FOR ALL PAGES */
+.grid{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /* border: 2px solid pink; */
+}
+
+.grid div{
+    color: darkolivegreen;
+}
+
+.image1{
+    grid-row: 1;
+    grid-column: 1;
+    /* border: 4px dotted rgb(214, 182, 0); */
+    text-align: center;
+    /* justify-content: center; */
+    
+}
+
+.image1 a img{
+    max-height:100%;
+    max-width:100%;
+    object-fit: contain;
+}
+
+/* .image1-ca{
+    max-width: 100%;
+} */
+
+.description2{
+    grid-row: 1;
+    grid-column: 2;
+    /* border: 4px dotted rgb(214, 182, 0); */
+    padding: 5%;
+
+}
+
+.description2 .content{
+    text-align: center;
+}
+
+.info_title{
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* padding-top:1%; */
+    font-size: 2.5em;
+}
+
+.content{
+    font-size: 1.1em;
+}
+.ingredients3{
+    grid-row:2;
+    grid-column: 1;
+    /* border: 4px dotted rgb(214, 182, 0); */
+    padding: 5%;
+    overflow-y: auto;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .ingredients3::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .ingredients3 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+.instructions4{
+    grid-row:2;
+    grid-column: 2;
+    /* border: 4px dotted rgb(214, 182, 0); */
+    padding: 5%;
+    overflow-y: auto;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .instructions4::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .instructions4 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+  /* media queries */
+  @media screen and (max-height: 820px){
+    .grid{
+        display: block;
+        overflow-y: auto;
+        
+        /* grid-template-columns: 100%; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    }
+    
+    .image1{
+        height: 50%;
+    }
+
+    .content{
+        font-size: larger;
+    }
+
+  }
+
+  /* @media screen and (max-width: 800px){
+    .grid{
+        display: block;
+        overflow-y: auto;
+        
+    }
+  } */
